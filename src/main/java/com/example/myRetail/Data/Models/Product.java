@@ -9,7 +9,7 @@ public class Product {
 
     @Id
     @JsonProperty("id")
-    private long id;
+    private int id;
 
     @JsonProperty("name")
     private String name;
@@ -17,17 +17,17 @@ public class Product {
     @JsonProperty("current_price")
     private Price current_price;
 
-    public Product(long id, String name, Price current_price) {
+    public Product(int id, String name, Price current_price) {
         this.id = id;
         this.name = name;
         this.current_price = current_price;
     }
 
-    public long getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(int id) {
         this.id = id;
     }
 

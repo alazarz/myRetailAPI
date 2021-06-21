@@ -11,7 +11,7 @@ public class Price {
 
     @JsonIgnore
     @Id
-    private Long productId;
+    private int productId;
 
     @JsonProperty("currency_code")
     private String currencyCode;
@@ -19,17 +19,17 @@ public class Price {
     @JsonProperty("value")
     private double price;
 
-    public Price(long productId, double price, String currencyCode) {
+    public Price(int productId, double price, String currencyCode) {
         this.productId = productId;
         this.price = price;
         this.currencyCode = currencyCode;
     }
 
-    public long getProductId() {
+    public int getProductId() {
         return productId;
     }
 
-    public void setProductId(long productId) {
+    public void setProductId(int productId) {
         this.productId = productId;
     }
 

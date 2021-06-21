@@ -9,6 +9,6 @@ import java.util.Optional;
 
 @Component
 @Repository
-public interface PriceRepository extends MongoRepository<Price, Long> {
-    Optional<Price> findById(Long productId);
+public interface PriceRepository extends MongoRepository<Price, Integer> {
+    Optional<Price> findById(Integer productId);
 }
